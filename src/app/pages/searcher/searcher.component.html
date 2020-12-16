@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-12">
+
+        <form [formGroup]="myForm">
+
+            <div class="input-group">
+                <input type="text"
+                       placeholder="Busqueda..."
+                       formControlName="search"
+                       class="form-control">
+
+            </div>
+        </form>
+
+    </div>
+</div>
+<br>
+<div class="row">
+
+    <div class="col-12">
+
+        <ul class="list-group">
+            <li *ngFor="let d of data"
+                class="list-group-item">{{d.name}}</li>
+        </ul>
+    </div>
+</div>
